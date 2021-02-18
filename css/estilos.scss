@@ -1,0 +1,101 @@
+$color_primary: #42bacb;
+
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/*=== ESTILOS DE NAV ===*/
+.navMobile{
+	background: $color_primary;
+	display: none;
+	img{
+		width: 40%;
+		&.leftImg{
+			float: left;
+		}
+		&.rightImg{
+			float: right;
+		}
+	}
+}
+
+/*=== FIN ESTILOS NAV ===*/
+/*=== ESTILOS BANNER ===*/
+.bannerContent{
+	position: relative;
+	.leftCarrousel, .rightForm{
+		padding: 0 !important;
+	}
+	.leftCarrousel{
+		position: relative;		
+		img{
+			width: 200px;
+		}
+		.owl-dots {
+			width: 100%;
+		    position: absolute;
+		    bottom: 0;
+		    span{
+		    	width: 40px !important;
+		    	height: 5px !important;
+		    }
+		}
+	}
+	.rightForm{
+		background: $color_primary;
+	}
+}
+/*FIN ESTILOS BANNER*/
+
+/*=== ESTILOS ESTUDIO ===*/
+.sectionOpciones{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	.title{
+		margin-bottom: 80px;
+	    background: url(../img/Logos_Iconos/TEXTURA.png);
+	    background-position: center;
+	    background-size: 33% 100%;
+		h1{
+			text-align: center;
+		    display: table;
+		    margin: auto;
+		    background: #fff;
+		    padding: 0 20px 0 20px;
+		}
+	}
+	.tarjetEstudio{
+		margin: 0 20px 50px 20px;
+		img{
+			width: 30%;
+			margin: auto;
+			display: table;
+		}
+		.contInfo{
+			p{
+				text-align: center;
+				margin: 0px;
+			}
+		}
+	}
+}
+/*FIN ESTUDIOS*/
+/*=== MEDIAS ===*/
+
+@media (max-width: 800px) {
+	
+	.title{
+		background: initial !important;
+	}
+
+}
+
+@media (max-width: 500px) {
+	
+	.navMobile{
+		display: block;
+	}
+
+}

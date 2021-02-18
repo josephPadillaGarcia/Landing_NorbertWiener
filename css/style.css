@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*=== ESTILOS DE NAV ===*/
+.navMobile {
+  background: #42bacb;
+  display: none;
+}
+.navMobile img {
+  width: 40%;
+}
+.navMobile img.leftImg {
+  float: left;
+}
+.navMobile img.rightImg {
+  float: right;
+}
+
+/*=== FIN ESTILOS NAV ===*/
+/*=== ESTILOS BANNER ===*/
+.bannerContent {
+  position: relative;
+}
+.bannerContent .leftCarrousel, .bannerContent .rightForm {
+  padding: 0 !important;
+}
+.bannerContent .leftCarrousel {
+  position: relative;
+}
+.bannerContent .leftCarrousel img {
+  width: 200px;
+}
+.bannerContent .leftCarrousel .owl-dots {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.bannerContent .leftCarrousel .owl-dots span {
+  width: 40px !important;
+  height: 5px !important;
+}
+.bannerContent .rightForm {
+  background: #42bacb;
+}
+
+/*FIN ESTILOS BANNER*/
+/*=== ESTILOS ESTUDIO ===*/
+.sectionOpciones {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.sectionOpciones .title {
+  margin-bottom: 80px;
+  background: url(../img/Logos_Iconos/TEXTURA.png);
+  background-position: center;
+  background-size: 33% 100%;
+}
+.sectionOpciones .title h1 {
+  text-align: center;
+  display: table;
+  margin: auto;
+  background: #fff;
+  padding: 0 20px 0 20px;
+}
+.sectionOpciones .tarjetEstudio {
+  margin: 0 20px 50px 20px;
+}
+.sectionOpciones .tarjetEstudio img {
+  width: 30%;
+  margin: auto;
+  display: table;
+}
+.sectionOpciones .tarjetEstudio .contInfo p {
+  text-align: center;
+  margin: 0px;
+}
+
+/*FIN ESTUDIOS*/
+/*=== MEDIAS ===*/
+@media (max-width: 800px) {
+  .title {
+    background: initial !important;
+  }
+}
+@media (max-width: 500px) {
+  .navMobile {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
