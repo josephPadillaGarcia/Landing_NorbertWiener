@@ -9,10 +9,12 @@ body {
   display: none;
 }
 .navMobile img {
-  width: 40%;
+  width: 60%;
+  padding: 15px 0;
 }
 .navMobile img.leftImg {
   float: left;
+  width: 75%;
 }
 .navMobile img.rightImg {
   float: right;
@@ -21,7 +23,7 @@ body {
 /*=== FIN ESTILOS NAV ===*/
 /*=== ESTILOS BANNER ===*/
 .bannerContent {
-  position: relative;
+  background: #42bacb;
 }
 .bannerContent .leftCarrousel, .bannerContent .rightForm {
   padding: 0 !important;
@@ -29,8 +31,63 @@ body {
 .bannerContent .leftCarrousel {
   position: relative;
 }
-.bannerContent .leftCarrousel img {
+.bannerContent .leftCarrousel .owl-nav {
+  margin-top: 0;
+}
+.bannerContent .leftCarrousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  color: #04437a !important;
+  font-size: 100px;
+  outline: none;
+}
+.bannerContent .leftCarrousel .owl-nav button.owl-prev:hover {
+  background: initial;
+}
+.bannerContent .leftCarrousel .owl-nav button.owl-next {
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  font-size: 100px;
+  color: #04437a !important;
+  outline: none;
+}
+.bannerContent .leftCarrousel .owl-nav button.owl-next:hover {
+  background: initial;
+}
+.bannerContent .leftCarrousel .item .nameCarrera {
+  position: absolute;
+  bottom: 0px;
+  left: -14px;
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-bottom: 80px;
+  padding-right: 49px;
+  background: url(../img/Logos_Iconos/CLAQUETA.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 108%;
+}
+.bannerContent .leftCarrousel .item .nameCarrera h3 {
+  color: white;
+  font-size: 30px;
+  margin: 0;
+}
+.bannerContent .leftCarrousel .item .moreleft {
+  left: -20px;
+}
+.bannerContent .leftCarrousel img.logoFlotante {
   width: 200px;
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+}
+.bannerContent .leftCarrousel img.imgdesk {
+  display: block;
+}
+.bannerContent .leftCarrousel img.imgmobile {
+  display: none;
 }
 .bannerContent .leftCarrousel .owl-dots {
   width: 100%;
@@ -41,8 +98,43 @@ body {
   width: 40px !important;
   height: 5px !important;
 }
+.bannerContent .leftCarrousel .owl-dots .owl-dot {
+  outline: none;
+}
 .bannerContent .rightForm {
   background: #42bacb;
+}
+.bannerContent .rightForm .contformWiener {
+  padding: 90px 40px 60px 40px;
+  color: white;
+}
+.bannerContent .rightForm .contformWiener h2 {
+  text-align: center;
+}
+.bannerContent .rightForm .contformWiener form {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.bannerContent .rightForm .contformWiener form .checkbox label {
+  font-size: 14px;
+}
+.bannerContent .rightForm .contformWiener form .checkbox label input {
+  margin: auto;
+  margin-left: -20px;
+}
+.bannerContent .rightForm .contformWiener form button {
+  width: 100%;
+  color: #23689b;
+  background: #ffcb5e;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 3px 0;
+}
+.bannerContent .rightForm .contformWiener img {
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 /*FIN ESTILOS BANNER*/
@@ -51,18 +143,21 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.sectionOpciones .textura img {
+  width: 100%;
+}
 .sectionOpciones .title {
   margin-bottom: 80px;
-  background: url(../img/Logos_Iconos/TEXTURA.png);
+  padding: 0 !important;
+  /*background: url(../img/Logos_Iconos/TEXTURA.png);
   background-position: center;
-  background-size: 33% 100%;
+  background-size: 33% 100%;*/
 }
 .sectionOpciones .title h1 {
   text-align: center;
   display: table;
   margin: auto;
   background: #fff;
-  padding: 0 20px 0 20px;
 }
 .sectionOpciones .tarjetEstudio {
   margin: 0 20px 50px 20px;
@@ -76,6 +171,9 @@ body {
   text-align: center;
   margin: 0px;
 }
+.sectionOpciones .tarjetEstudio .contInfo p strong {
+  display: block;
+}
 
 /*FIN ESTUDIOS*/
 /*=== MEDIAS ===*/
@@ -84,9 +182,70 @@ body {
     background: initial !important;
   }
 }
+@media (max-width: 770px) {
+  .contformWiener {
+    padding: 20px 40px 60px 40px !important;
+  }
+  .contformWiener img {
+    display: none;
+  }
+
+  .textura {
+    display: none;
+  }
+
+  .leftCarrousel img.imgdesk {
+    display: none !important;
+  }
+  .leftCarrousel img.imgmobile {
+    display: block !important;
+  }
+}
 @media (max-width: 500px) {
   .navMobile {
     display: block;
+  }
+
+  .item .nameCarrera {
+    position: absolute;
+    bottom: -27px !important;
+    left: -37px !important;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-bottom: 80px;
+    padding-right: 49px;
+    background: url(../img/Logos_Iconos/CLAQUETA.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85% !important;
+  }
+  .item .nameCarrera h3 {
+    color: white;
+    font-size: 15px !important;
+    margin: 0;
+  }
+
+  .owl-nav button.owl-prev {
+    position: absolute;
+    top: 25% !important;
+    left: 5px !important;
+    color: #04437a !important;
+    font-size: 70px !important;
+    outline: none;
+  }
+  .owl-nav button.owl-prev:hover {
+    background: initial;
+  }
+  .owl-nav button.owl-next {
+    position: absolute;
+    right: 5px !important;
+    top: 25% !important;
+    font-size: 70px !important;
+    color: #04437a !important;
+    outline: none;
+  }
+  .owl-nav button.owl-next:hover {
+    background: initial;
   }
 }
 
