@@ -37,45 +37,47 @@ body {
 .bannerContent .leftCarrousel .owl-nav button.owl-prev {
   position: absolute;
   top: 40%;
-  left: 20px;
-  color: #04437a !important;
-  font-size: 100px;
+  left: 0px;
+  color: #23689b !important;
+  font-size: 70px;
   outline: none;
+  background: #ffffffb8;
+  margin: 0 !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
 }
 .bannerContent .leftCarrousel .owl-nav button.owl-prev:hover {
-  background: initial;
+  background: #ffffffb8;
 }
 .bannerContent .leftCarrousel .owl-nav button.owl-next {
   position: absolute;
-  right: 20px;
+  right: 0px;
   top: 40%;
-  font-size: 100px;
-  color: #04437a !important;
+  color: #23689b !important;
+  font-size: 70px;
   outline: none;
+  background: #ffffffb8;
+  margin: 0 !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
 }
 .bannerContent .leftCarrousel .owl-nav button.owl-next:hover {
-  background: initial;
+  background: #ffffffb8;
 }
 .bannerContent .leftCarrousel .item .nameCarrera {
   position: absolute;
-  bottom: 0px;
-  left: -14px;
-  padding-top: 80px;
-  padding-left: 50px;
-  padding-bottom: 80px;
-  padding-right: 49px;
-  background: url(../img/Logos_Iconos/CLAQUETA.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 108%;
+  bottom: 40%;
+  right: 14%;
 }
 .bannerContent .leftCarrousel .item .nameCarrera h3 {
   color: white;
-  font-size: 30px;
+  font-size: 60px;
   margin: 0;
-}
-.bannerContent .leftCarrousel .item .moreleft {
-  left: -20px;
+  text-shadow: 0px 4px 7px #3a3a3a;
 }
 .bannerContent .leftCarrousel img.logoFlotante {
   width: 200px;
@@ -85,6 +87,8 @@ body {
 }
 .bannerContent .leftCarrousel img.imgdesk {
   display: block;
+  height: 100vh;
+  object-fit: cover;
 }
 .bannerContent .leftCarrousel img.imgmobile {
   display: none;
@@ -103,9 +107,12 @@ body {
 }
 .bannerContent .rightForm {
   background: #42bacb;
+  display: grid;
+  height: 100vh;
+  align-items: center;
 }
 .bannerContent .rightForm .contformWiener {
-  padding: 90px 40px 60px 40px;
+  padding: 0 30px;
   color: white;
 }
 .bannerContent .rightForm .contformWiener h2 {
@@ -183,6 +190,10 @@ body {
   }
 }
 @media (max-width: 770px) {
+  .bannerContent .rightForm {
+    height: 70vh;
+  }
+
   .contformWiener {
     padding: 20px 40px 60px 40px !important;
   }
@@ -194,6 +205,9 @@ body {
     display: none;
   }
 
+  .leftCarrousel .owl-dots {
+    bottom: 8px !important;
+  }
   .leftCarrousel img.imgdesk {
     display: none !important;
   }
@@ -201,51 +215,28 @@ body {
     display: block !important;
   }
 }
+@media (max-width: 630px) {
+  .owl-nav {
+    margin-top: 0;
+  }
+  .owl-nav button.owl-prev {
+    font-size: 55px !important;
+  }
+  .owl-nav button.owl-next {
+    font-size: 55px !important;
+  }
+}
+@media (max-width: 600px) {
+  .item .nameCarrera h3 {
+    color: white;
+    font-size: 40px !important;
+    margin: 0;
+    text-shadow: 0px 4px 7px #3a3a3a;
+  }
+}
 @media (max-width: 500px) {
   .navMobile {
     display: block;
-  }
-
-  .item .nameCarrera {
-    position: absolute;
-    bottom: -27px !important;
-    left: -37px !important;
-    padding-top: 80px;
-    padding-left: 50px;
-    padding-bottom: 80px;
-    padding-right: 49px;
-    background: url(../img/Logos_Iconos/CLAQUETA.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 85% !important;
-  }
-  .item .nameCarrera h3 {
-    color: white;
-    font-size: 15px !important;
-    margin: 0;
-  }
-
-  .owl-nav button.owl-prev {
-    position: absolute;
-    top: 25% !important;
-    left: 5px !important;
-    color: #04437a !important;
-    font-size: 70px !important;
-    outline: none;
-  }
-  .owl-nav button.owl-prev:hover {
-    background: initial;
-  }
-  .owl-nav button.owl-next {
-    position: absolute;
-    right: 5px !important;
-    top: 25% !important;
-    font-size: 70px !important;
-    color: #04437a !important;
-    outline: none;
-  }
-  .owl-nav button.owl-next:hover {
-    background: initial;
   }
 }
 
